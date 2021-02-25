@@ -308,7 +308,7 @@ label {
 .login-reg-wrap .widget-title > span,
 .contact-form-wrap .widget-title > span,
 .latest-cars-three .latest-car-content h5 a:hover {
-	color: #ff5400;
+	color: #1D928C;
 }
 
 .btn,
@@ -335,7 +335,7 @@ label {
 .related-tag ul li a:hover,
 .post-avatar-content ul li a:hover,
 .contact-info-list li:hover .icon {
-	background: #ff5400;
+	background: #1D928C;
 }
 
 /* button style */
@@ -1269,7 +1269,7 @@ label {
 }
 .banner-line-wrap > span::before {
     content: "";
-    border: 1px solid #ff5400;
+    border: 1px solid #1D928C;
     background: #fff;
     border-radius: 50%;
     width: 8px;
@@ -1539,11 +1539,11 @@ label {
     background: #fff;
 }
 .car-search-wrap .ui-slider-range {
-    background: #ff5400;
+    background: #1D928C;
 }
 .car-search-wrap .price_filter .ui-slider-handle {
     border: 3px solid #fff;
-    background: #ff5400;
+    background: #1D928C;
     box-shadow: 0px 3px 0px 0px rgba(35, 35, 35, 0.06);
     border-radius: 50px;
     height: 22px;
@@ -1619,6 +1619,13 @@ label {
     line-height: 1.3;
     margin-bottom: 25px;
 }
+.best-services-content p{
+    font-size: 21px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 10%;
+}
+
 .best-services-content h3 a:hover {
     color: #fff;
 }
@@ -1644,15 +1651,15 @@ label {
 }
 .best-services-content .read-more {
     background: #fff;
-    color: #ff5400;
+    color: #1D928C;
     padding: 13px 23px;
 }
 .best-services-content.bg-2 .meta li:last-child a {
-    color: #ff5400;
+    color: #1D928C;
 }
 .best-services-content.bg-2 .rating ul li:first-child,
 .best-services-content.bg-2 .price {
-    color: #ff5400;
+    color: #1D928C;
 }
 .best-services-content.bg-2 .rating ul li:last-child {
     color: #6f6e6e;
@@ -2048,7 +2055,7 @@ label {
 }
 .latest-car-content-top .price {
     display: block;
-    background: #ff5400;
+    background: #1D928C;
     color: #fff;
     font-size: 16px;
     font-weight: 600;
@@ -2066,7 +2073,7 @@ label {
 	height: 0;
 	border-style: solid;
 	border-width: 0 0 40px 14px;
-	border-color: transparent transparent #ff5500 transparent;
+	border-color: transparent transparent #FFB617 transparent;
 }
 .latest-car-content > p {
     font-size: 13px;
@@ -2125,8 +2132,8 @@ label {
 }
 .latest-car-menu-active button.active {
 	color: #fff;
-	background: #ff5400;
-	border-color: #ff5400;
+	background: #1D928C;
+	border-color: #1D928C;
 }
 .gray-lite-bg .latest-cars-wrapper {
     padding: 0;
@@ -2243,7 +2250,7 @@ label {
     bottom: 0;
     width: 100%;
     height: 13px;
-    background: #ff5400;
+    background: #1D928C;
     transition: .3s linear;
     opacity: .18;
 }
@@ -2290,7 +2297,7 @@ label {
     text-align: center;
     line-height: 80px;
     border-radius: 50%;
-    background: #ff5400;
+    background: #1D928C;
     color: #fff;
     font-size: 24px;
     margin-right: 20px;
@@ -2339,7 +2346,7 @@ label {
     box-shadow: 0px 3px 3px 0px rgba(35, 35, 35, 0.08);
 }
 .progress-list .progress-bar {
-    background-color: #ff5400;
+    background-color: #1D928C;
     border-radius: 8px;
 }
 .progress-list .progress-item:nth-child(2) .progress-bar,
@@ -2365,7 +2372,7 @@ label {
     top: 0;
     right: 0;
     color: #fff;
-    background-color: #ff5400;
+    background-color: #1D928C;
     padding: 6px 10px;
     line-height: 1;
     border-radius: 5px 5px 13px 5px;
@@ -2671,17 +2678,17 @@ label {
     display: block;
     text-align: center;
     line-height: 35px;
-    background: #ff5400;
+    background: #1D928C;
     border-radius: 50%;
     color: #fff;
     font-size: 14px;
 }
 .inv-thumb-meta li a:hover {
     background: #fff;
-    color: #ff5400;
+    color: #1D928C;
 }
 .tooltip .tooltip-inner {
-    background-color: #ff5400 !important;
+    background-color: #1D928C !important;
     opacity: 1;
     font-size: 12px;
     font-weight: 500;
@@ -2693,10 +2700,10 @@ label {
     line-height: 1;
 }
 .tooltip .arrow:before {
-  border-bottom-color: #ff5400;
+  border-bottom-color: #1D928C;
 }
 .tooltip .arrow:before {
-  border-top-color: #ff5400;
+  border-top-color: #1D928C;
 }
 .bs-tooltip-top {
     padding-bottom: 15px;
@@ -2874,7 +2881,7 @@ label {
     top: 50%;
     transform: translateY(-50%);
     border: none;
-    background: #ff5400;
+    background: #1D928C;
     color: #fff;
     width: 47px;
     height: 50px;
@@ -3006,7 +3013,7 @@ label {
 }
 .sidebar-loan-calculator > a:hover {
     color: #fff;
-    border-color: #ff5400;
+    border-color: #1D928C;
 }
 .advisor-wrap {
     display: flex;
@@ -3079,7 +3086,7 @@ label {
     top: 0;
     width: 100%;
     height: 100%;
-    background: #ff5400;
+    background: #1D928C;
     transition: .3s linear;
     opacity: 0;
 }
@@ -3423,7 +3430,7 @@ label {
     height: 0;
     border-style: solid;
     border-width: 15px 13px 0 13px;
-    border-color: #ff5400 transparent transparent transparent;
+    border-color: #1D928C transparent transparent transparent;
     margin: 0 auto;
     z-index: -11;
 }
@@ -3573,7 +3580,7 @@ label {
 }
 .fact-content h3 {
     font-size: 36px;
-    color: #ff5400;
+    color: #1D928C;
     line-height: 1;
     margin-bottom: 2px;
 }
@@ -3591,7 +3598,7 @@ label {
     text-align: center;
     max-width: 300px;
     margin: 0 auto 0;
-    background: #ff5400;
+    background: #1D928C;
     color: #fff;
     text-transform: uppercase;
     font-size: 12px;
@@ -3608,7 +3615,7 @@ label {
     width: 20px;
     height: 100%;
     clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 56% 50%, 0% 0%);
-    background: #ff5400;
+    background: #1D928C;
 }
 .fact-area-title::after {
     content: "";
@@ -3618,7 +3625,7 @@ label {
     width: 20px;
     height: 100%;
     clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);;
-    background: #ff5400;
+    background: #1D928C;
 }
 .fact-area-title > span {
     position: absolute;
@@ -3712,10 +3719,10 @@ label {
 	justify-content: center;
 	flex-wrap: wrap;
     padding: 12px 30px;
-    background: #ff5400;
+    background: #1D928C;
 }
 .team-item:hover {
-	border-color: #ff5400;
+	border-color: #1D928C;
 }
 .team-social ul li {
     display: block;
@@ -4507,7 +4514,7 @@ label {
 }
 .contact-info-list li:hover .icon {
     color: #fff;
-    border-color: #ff5400;
+    border-color: #1D928C;
 }
 .contact-info-list li .content {
     flex-grow: 1;
@@ -4612,7 +4619,7 @@ label {
     height: 44px;
     line-height: 44px;
     text-align: center;
-    background: #ff5400;
+    background: #1D928C;
     border-radius: 3px;
     margin-right: 15px;
     flex: 0 0 44px;
