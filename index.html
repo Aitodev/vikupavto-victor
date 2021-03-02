@@ -31,7 +31,54 @@
     </head>
     <body>
 
-
+        <script>
+            function currentYPosition() {
+        // Firefox, Chrome, Opera, Safari
+        if (self.pageYOffset) return self.pageYOffset;
+        // Internet Explorer 6 - standards mode
+        if (document.documentElement && document.documentElement.scrollTop)
+            return document.documentElement.scrollTop;
+        // Internet Explorer 6, 7 and 8
+        if (document.body.scrollTop) return document.body.scrollTop;
+        return 0;
+    }
+    
+    
+    function elmYPosition(eID) {
+        var elm = document.getElementById(eID);
+        var y = elm.offsetTop;
+        var node = elm;
+        while (node.offsetParent && node.offsetParent != document.body) {
+            node = node.offsetParent;
+            y += node.offsetTop;
+        } return y;
+    }
+    
+    
+    function smoothScroll(eID) {
+        var startY = currentYPosition();
+        var stopY = elmYPosition(eID);
+        var distance = stopY > startY ? stopY - startY : startY - stopY;
+        if (distance < 100) {
+            scrollTo(0, stopY); return;
+        }
+        var speed = Math.round(distance / 100);
+        if (speed >= 20) speed = 20;
+        var step = Math.round(distance / 25);
+        var leapY = stopY > startY ? startY + step : startY - step;
+        var timer = 0;
+        if (stopY > startY) {
+            for ( var i=startY; i<stopY; i+=step ) {
+                setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
+                leapY += step; if (leapY > stopY) leapY = stopY; timer++;
+            } return;
+        }
+        for ( var i=startY; i>stopY; i-=step ) {
+            setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
+            leapY -= step; if (leapY < stopY) leapY = stopY; timer++;
+        }
+    }
+        </script>
         <!-- preloader-start -->
         <div class="preloader">
             <div class="meter">
@@ -96,9 +143,9 @@
                                     </div>
                                     <div class="navbar-wrap main-menu d-none d-lg-flex">
                                         <ul class="navigation">
-                                            <li class="active"><a href="index-2.html#">Главная</a></li>
-                                            <li><a href="index-2.html#">Оставляй выкуп</a></li>
-                                            <li><a href="index-2.html#">О нас</a></li>
+                                            <li class="active"><a href="#">Главная</a></li>
+                                            <li><a href="#visit">Оставляй выкуп</a></li>
+                                            <li><a href="#about-us">О нас</a></li>
                                             <li><a href="contact.html">Контакты</a></li>
                                         </ul>
                                     </div>
@@ -176,7 +223,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="banner-overlay-text">Car Service</div>
                 <div class="banner-line-wrap">
                     <span class="line-one"></span>
                     <span class="line-two"></span>
@@ -185,7 +231,7 @@
             <!-- banner-area-end -->
 
             <!-- services-area -->
-            <section class="best-services-area">
+            <section class="best-services-area" id="about-us">
                 <div class="container-fluid p-0 fix">
                     <div class="row no-gutters justify-content-center">
                         <div class="col-xl-6 col-lg-12 col-md-6 col-sm-9">
@@ -210,7 +256,7 @@
                                 </div>
                                 <div class="best-services-content bg-2" data-background="img/bg/best_services_bg02.jpg">
                                     <ul class="meta">
-                                        <p>Выкупаем любые марки и модели<br>Для нас нет неликвидных автомобилей. <br>Мы готовы купить авто любой марки в любом состоянии не старше 10 лет</p>
+                                        <p>Выкупаем любые марки и модели<br>Для нас нет неликвидных автомобилей. <br>Мы готовы купить авто в любом состоянии не старше 10 лет</p>
                                     </ul>
                                     <a href="index-2.html#" class="read-more btn">Оставить заявку</a>
                                 </div>
@@ -222,7 +268,7 @@
             <!-- services-area-end -->
 
             <!-- car-search-area -->
-            <section class="car-search-area car-search-style-two pt-120">
+            <section class="car-search-area car-search-style-two pt-120" id="visit">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -288,9 +334,7 @@
                     <div class="row justify-content-center">
                         <div class="col-xl-6 col-lg-7">
                             <div class="section-title text-center mb-70">
-                                <h2 class="overlay-title">Browse cars</h2>
-                                <span class="sub-title">categories cars</span>
-                                <h2 class="title">Browse by Type cars</h2>
+                                <h2 class="title">Завершенные сделки</h2>
                                 <div class="line"><img src="img/images/title_line.png" alt=""></div>
                             </div>
                         </div>
@@ -367,12 +411,12 @@
                                     <div class="col-sm-6">
                                       
                                         <div class="about-img">
-                                            <img src="img/slider/slick2.png" alt="">
+                                            <img src="img/slider/slick3.png" alt="">
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="about-img">
-                                            <img src="img/slider/slick3.png" alt="">
+                                            <img src="img/slider/slick2.png" alt="">
                                         </div>
                                     </div>
                                     <div class="col-sm-12" style="margin-top: 20px;">
